@@ -1,5 +1,5 @@
 describe("Automation Practise", function () {
-  it("CheckBox : Alok version - RS", function () {
+  it("CheckBox Testing: Alok version - RS", function () {
     cy.visit("https://rahulshettyacademy.com/AutomationPractice/");
     cy.get("#product").find("tr td:nth-child(2)").as("table");
     cy.get("@table").each(($el, index, $list) => {
