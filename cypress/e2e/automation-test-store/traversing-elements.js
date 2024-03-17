@@ -7,7 +7,7 @@ describe("Traversing DOM elements in Cypress", () => {
     cy.visit("http://webdriveruniversity.com/");
     cy.get("#data-table").invoke("removeAttr", "target").click({ force: true });
   });
-  it("children() to get the children of DOM elements", () => {
+  it("To get the children of DOM elements : children()", () => {
     cy.get(".traversal-breadcrumb")
       .children(".active")
       .should("contain", "Contact Us");
