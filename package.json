@@ -1,0 +1,18 @@
+{
+  "devDependencies": {
+    "cypress": "^13.6.1"
+  },
+  "name": "newcypress",
+  "version": "1.0.0",
+  "description": "Giani Cypress Zero to Expert",
+  "main": "cypress.config.js",
+  "dependencies": {
+    "chai": "^5.0.0"
+  },
+  "scripts": {
+    "triggerAllTest-headless": "npx cypress run",
+    "triggerAllTestBrowser-headed": "npx cypress run --headed"
+  },
+  "author": "",
+  "license": "ISC"
+}
