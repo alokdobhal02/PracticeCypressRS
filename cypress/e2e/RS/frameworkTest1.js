@@ -1,10 +1,10 @@
 /// <references types="Cypress"/>
 describe("Automation Practise", function () {
   before(function () {
-    cy.fixture("example.json");
+    cy.fixture("example").then(function (data) {});
   });
 
-  it.only("Positive - RS", function () {
+  it("Positive - RS", function () {
     cy.visit("https://rahulshettyacademy.com/angularpractice/");
     cy.get(".form-group").find('input[name="name"]').type("Bob");
     cy.get('input[name="name"]:nth-Child(2)').type("Alok");
@@ -31,7 +31,7 @@ describe("Automation Practise", function () {
     cy.get('input[name="name"]:nth-Child(2)').type("Alok");
     cy.get(".form-group").find('input[name="name"]').type("Neha");
   });
-  it.only("Using Fixture Json File : Positive - RS", function () {
+  it("Using Fixture Json File : Positive - RS", function () {
     cy.visit("https://rahulshettyacademy.com/angularpractice/");
     cy.get(".form-group").find('input[name="name"]').type("Bob");
     cy.get('input[name="name"]:nth-Child(2)').type("Alok");

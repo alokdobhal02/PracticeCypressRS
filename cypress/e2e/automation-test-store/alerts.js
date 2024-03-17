@@ -1,5 +1,5 @@
 /// <reference types="Cypress" />
-describe("Web Security - Alert", () => {
+describe("Alert - Web Security ", () => {
   it("Automation Test Store : Validate Alert", () => {
     cy.visit("https://webdriveruniversity.com/");
     cy.get("#popup-alerts")
